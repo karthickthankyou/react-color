@@ -76,3 +76,5 @@ export const isvalidColorString = (string, type) => {
   const stringWithoutDegree = string.replace('°', '')
   return tinycolor(`${ type } (${ stringWithoutDegree })`)._ok
 }
+
+export default {simpleCheckForValidColor, toState, isValidHex, getContrastingColor, red, isvalidColorString}
